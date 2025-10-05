@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+ html, body {
+    height: 100%;
+    margin: 0;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000000;
+    min-height: 100vh;
+}
+
+.CONTAINER {
+    width: 700px;
+    height: 450px;
+    background-color: beige;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+}
+
+    .photo {
+        width: 300px;
+        height: 400px;
+        background-color: beige;
+        margin: 20px;
+        
+    }
+
+    .b1 {
+        background-color: darkblue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        font-size: medium;
+
+    }
+
+    .b1:hover {
+        background-color: lightblue;
+        color: black;
+    }
+
+    .text {
+        width: 400px;
+        height: 400px;
+        background-color: beige;
+        margin: 20px;
+    }
+
+    .avatar {
+        border: 5px solid darkblue;
+    }
+
+    @media(max-width:640px) {
+        .CONTAINER {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+        .photo,
+        .text {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            font-size: 30px;
+            padding: 20px;
+
+
+        }
+
+
+        .b1 {
+            margin-bottom: 50px;
+            height: 50px;
+            width: 100px;
+        }
+
+    }
+</style>
+</head>
+
+<body>
+    <div class="CONTAINER">
+
+        <div class="photo">
+            <img class="avatar"
+                src="https://preview.redd.it/origin-of-shah-rukh-khan-hakla-meme-v0-k5dcyh0ulxgf1.jpg?width=640&crop=smart&auto=webp&s=9fe1a67bf1b6f2774739038535e214eb1e3e4669"
+                alt="Avatar" style="width:100%;border-radius: 7px;">
+            <p
+                style="font-size:30px;margin-top:10px;margin-left:21px;color:darkblue;font-family:Georgia, 'Times New Roman', Times, serif;text-decoration:underline">
+                <b>Hakla Shahruk</b></p>
+        </div>
+        <div class="text">
+            <p style="padding:5px; font-size: 40px; text-align:center;text-decoration: underline;color:darkblue;">
+                <b>Web Designer</b></p>
+            <p style="padding:20px; font-size: 20px;margin-top:-55px;"></p>Web Designer | UX/UI Specialist | Crafting
+            Engaging Digital Experiences
+
+            Creative Web Designer
+
+            Web Designer | Front-End Developer | Passionate About Clean, Impactful Design
+
+            UX/UI Web Designer | Turning Ideas Into Seamless Digital Experiences<br><br><span
+                style="font-size: 20px;">Email: rahul@example.com</span></p>
+            <div>
+                <button style="margin-right: 5px;margin-left: -3px;border-radius: 5px;" class="b1"
+                    onclick="window.open('https://www.youtube.com/shorts/eNBRmwa-un4','_blank')">Contact</button>
+                <button style="border-radius: 5px;" class="b1"
+                    onclick="window.open('https://www.youtube.com/shorts/eNBRmwa-un4','_blank')">Portfolio</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
